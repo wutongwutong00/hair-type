@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hair Type</title>
+  <style>
+    body {
+      margin: 2em;
+      overflow: hidden;
+    }
+    @font-face {
+      font-family: "hairfont";
+      src:url("./assets/HairThin-HairTypeVF.woff2") format("woff2-variations");
+    }
+    span {
+      margin: 0%;
+      font-size: 114px;
+      font-family: "hairfont";
+    }
+    span:hover {
+      /* filter: blur(2px); */
+      color: white;
+    }
+
+    @media screen and (max-width: 300px){
+      body {
+        margin-top: 4em;
+      }
+      span {
+        font-weight: 100;
+        font-variation-settings: "wdth" 100;
+        transition: 0.4s ease-in-out; 
+        letter-spacing: -10px;
+      }
+    }
+    @media screen and (min-width: 400px){
+      body {
+        margin-top: 3.6em;
+      }
+      span {
+        font-weight: 120;
+        font-variation-settings: "wdth" 120;
+        transition: 0.4s ease-in-out; 
+        letter-spacing: -75px;
+        font-size: 300px;
+      }
+    }
+    @media screen and (min-width: 550px){
+      body {
+        margin-top: 3em;
+      }
+      span {
+        font-weight: 140;
+        font-variation-settings: "wdth" 140;
+        transition: 0.4s ease-in-out; 
+        letter-spacing: -30px;
+        font-size: 190px;
+      }
+    }
+    @media screen and (min-width: 650px){
+      body {
+        margin-top: 2.8em;
+      }
+      span {
+        /* background-color: pink; */
+        font-weight: 160;
+        font-variation-settings: "wdth" 160;
+        transition: 0.4s ease-in-out; 
+        letter-spacing: -20px;
+        font-size: 160px;
+      }
+    }
+    @media screen and (min-width: 800px){
+      body {
+        margin-top: 2.4em;
+      }
+      span {
+        font-weight: 180;
+        font-variation-settings: "wdth" 180;
+        transition: 0.4s ease-in-out;
+        letter-spacing: -2px;
+        font-size: 114px; 
+      }
+    }
+
+
+    @media screen and (min-width: 900px){
+      body {
+        margin-top: 2em;
+      }
+      span {
+        font-weight: 200;
+        font-variation-settings: "wdth" 200;
+        transition: 0.4s ease-in-out; 
+        font-size: 114px;
+    }
+  }
+
+    @media screen and (min-width: 1000px){
+      span {
+        font-weight: 220;
+        font-variation-settings: "wdth" 220;
+        transition: 0.4s ease-in-out;
+    }
+  }
+  @media screen and (min-width: 1100px){
+      span {
+        font-weight: 140;
+        font-variation-settings: "wdth" 240;
+        transition: 0.4s ease-in-out;
+    }
+  }
+    @media screen and (min-width: 1200px){
+      span {
+        font-weight: 250;
+        font-variation-settings: "wdth" 250;
+        transition: 0.4s ease-in-out;
+      }
+  }
+    @media screen and (min-width: 1400px){
+      span {
+        font-weight: 280;
+        font-variation-settings: "wdth" 280;
+        transition: 0.4s ease-in-out;
+      }
+  }
+    @media screen and (min-width: 1600px){
+      span {
+        font-weight: 300;
+        font-variation-settings: "wdth" 300;
+        transition: 0.4s ease-in-out;
+      }
+  }
+  </style>
+</head>
+<body contenteditable="true">
+<span onclick= "press()">
+  pull my hair
+</span>
+<script>
+function press() {
+  var myWindow = window.open("", "MsgWindow", "width=220,height=150");
+  myWindow.document.write("<ul>'Hair Type' is inspired by my own hair, 2a, 'fallen' into a webpage as a variable font, visualising the material of the matter with uniform properties. Sorry, only lowercase!");
+}
+</script>
+</body>
+</html>
