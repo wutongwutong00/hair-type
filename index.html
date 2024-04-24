@@ -19,10 +19,6 @@
       font-size: 114px;
       font-family: "hairfont";
     }
-    span:hover {
-      /* filter: blur(2px); */
-      color: white;
-    }
 
     @media screen and (max-width: 300px){
       body {
@@ -135,15 +131,11 @@
   }
   </style>
 </head>
-<body contenteditable="true">
-<span onclick= "press()">
+<body contenteditable="true" spellcheck="false">
+<span>
   pull my hair
 </span>
 <script>
-function press() {
-  var myWindow = window.open("", "MsgWindow", "width=220,height=150");
-  myWindow.document.write("<ul>'Hair Type' is inspired by my own hair, 2a, 'fallen' into a webpage as a variable font, visualising the material of the matter with uniform properties. Sorry, only lowercase!");
-}
 </script>
 </body>
 </html>
